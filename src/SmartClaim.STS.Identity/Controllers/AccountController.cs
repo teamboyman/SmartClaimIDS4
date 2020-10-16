@@ -24,6 +24,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using Novell.Directory.Ldap;
 using SmartClaim.Shared.Configuration.Identity;
 using SmartClaim.STS.Identity.Configuration;
 using SmartClaim.STS.Identity.Helpers;
@@ -107,7 +108,7 @@ namespace SmartClaim.STS.Identity.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginInputModel model, string button)
+        public async Task<IActionResult> LoginOld(LoginInputModel model, string button)
         {
             // check if we are in the context of an authorization request
             var context = await _interaction.GetAuthorizationContextAsync(model.ReturnUrl);
@@ -183,6 +184,114 @@ namespace SmartClaim.STS.Identity.Controllers
                     if (result.IsLockedOut)
                     {
                         return View("Lockout");
+                    }
+                }
+                await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials"));
+                ModelState.AddModelError(string.Empty, AccountOptions.InvalidCredentialsErrorMessage);
+            }
+
+            // something went wrong, show form with error
+            var vm = await BuildLoginViewModelAsync(model);
+            return View(vm);
+        }
+
+
+        /// <summary>
+        /// Handle postback from username/password login
+        /// </summary>
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginInputModel model, string button)
+        {
+            // check if we are in the context of an authorization request
+            var context = await _interaction.GetAuthorizationContextAsync(model.ReturnUrl);
+
+            // the user clicked the "cancel" button
+            if (button != "login")
+            {
+                if (context != null)
+                {
+                    // if the user cancels, send a result back into IdentityServer as if they 
+                    // denied the consent (even if this client does not require consent).
+                    // this will send back an access denied OIDC error response to the client.
+                    await _interaction.GrantConsentAsync(context, ConsentResponse.Denied);
+
+                    // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
+                    if (await _clientStore.IsPkceClientAsync(context.ClientId))
+                    {
+                        // if the client is PKCE then we assume it's native, so this change in how to
+                        // return the response is for better UX for the end user.
+                        return View("Redirect", new RedirectViewModel { RedirectUrl = model.ReturnUrl });
+                    }
+
+                    return Redirect(model.ReturnUrl);
+                }
+
+                // since we don't have a valid context, then we just go back to the home page
+                return Redirect("~/");
+            }
+
+            if (ModelState.IsValid)
+            {
+                var user = await _userResolver.GetUserAsync(model.Username);
+                if (user != default(TUser))
+                {
+                    if (await _userManager.IsLockedOutAsync(user))
+                    {
+                        return View("Lockout");
+                    }
+                    else
+                    {
+                        string domainName = "bla.co.th";
+                        string userDn = $"{model.Username}@{domainName}";
+
+                        try
+                        {
+                            using (var connection = new LdapConnection { SecureSocketLayer = false })
+                            {
+                                connection.Connect(domainName, LdapConnection.DefaultPort);
+                                connection.Bind(userDn, model.Password);
+                                if (connection.Bound)
+                                {
+                                    //var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, model.RememberLogin, lockoutOnFailure: true);
+                                    await _signInManager.SignInAsync(user, isPersistent: false);
+                                    await _events.RaiseAsync(new UserLoginSuccessEvent(user.UserName, user.Id.ToString(), user.UserName));
+
+                                    if (context != null)
+                                    {
+                                        if (await _clientStore.IsPkceClientAsync(context.ClientId))
+                                        {
+                                            // if the client is PKCE then we assume it's native, so this change in how to
+                                            // return the response is for better UX for the end user.
+                                            return View("Redirect", new RedirectViewModel { RedirectUrl = model.ReturnUrl });
+                                        }
+
+                                        // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
+                                        return Redirect(model.ReturnUrl);
+                                    }
+
+                                    // request for a local page
+                                    if (Url.IsLocalUrl(model.ReturnUrl))
+                                    {
+                                        return Redirect(model.ReturnUrl);
+                                    }
+
+                                    if (string.IsNullOrEmpty(model.ReturnUrl))
+                                    {
+                                        return Redirect("~/");
+                                    }
+
+                                    // user might have clicked on a malicious link - should be logged
+                                    throw new Exception("invalid return URL");
+                                }
+
+                            }
+                        }
+                        catch (LdapException)
+                        {
+                            // Log exception
+                        }
                     }
                 }
                 await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials"));

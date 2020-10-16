@@ -7,7 +7,7 @@
 
 <div class="login-page">
     <div class="page-header">
-        <h1>@Localizer["Title"]</h1>
+        @*<h1>@Localizer["Title"]</h1>*@
     </div>
 
     @await Html.PartialAsync("_ValidationSummary")
@@ -16,71 +16,97 @@
 
         @if (Model.EnableLocalLogin)
         {
-            <div class="col-sm-6">
-                <div class="card mt-3">
-                    <h5 class="card-header">@Localizer["LocalLogin"]</h5>
-                    <div class="card-body">
-                        <form asp-route="Login">
-                            <input type="hidden" asp-for="ReturnUrl" />
+            @*<div class="col-md-3"></div>*@
+            <div class="col-sm-12">
+                <center>
+                    <div class="col-sm-5">
+                        <div class="card mt-3">
+                            @*<center>
+                                    <h4 class="card-header">@Localizer["LocalLogin"]</h4>
+                                </center>*@
 
-                            <fieldset>
-                                <div class="form-group row">
-                                    <div class="col-sm-12">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="input-username">
-                                                    <i class="fa fa-user"></i>
-                                                </span>
+                            <div class="card-body">
+                                <img src="~/images/logo THA ENG.png" class="img-fluid" height="150" />
+                                <br />
+                                <br />
+                                <form asp-route="Login">
+                                    <input type="hidden" asp-for="ReturnUrl" />
+
+                                    <fieldset>
+                                        <div class="form-group row">
+                                            <div class="col-sm-12">
+                                                <div class="input-group input-group-lg">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="input-username">
+                                                            <i class="fa fa-user"></i>
+                                                        </span>
+                                                    </div>
+                                                    <input class="form-control" placeholder="ชื่ออีเมลล์" asp-for="Username" aria-label="Username" aria-describedby="input-username" autofocus>
+                                                </div>
                                             </div>
-                                            <input class="form-control" placeholder="@Localizer[LoginPolicyResolutionLocalizer.GetUserNameLocalizationKey(Model.LoginResolutionPolicy)]" asp-for="Username" aria-label="Username" aria-describedby="input-username" autofocus>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <div class="col-sm-12">
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="input-password">
-                                                    <span class="oi oi-lock-locked" title="Lock" aria-hidden="true"></span>
-                                                </span>
+                                        <div class="form-group row">
+                                            <div class="col-sm-12">
+                                                <div class="input-group input-group-lg">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="input-password">
+                                                            <span class="oi oi-lock-locked" title="Lock" aria-hidden="true"></span>
+                                                        </span>
+                                                    </div>
+                                                    <input type="password" class="form-control" placeholder="รหัสเข้าอีเมล์" aria-label="Password" aria-describedby="input-password" asp-for="Password" autocomplete="off">
+                                                </div>
                                             </div>
-                                            <input type="password" class="form-control" placeholder="@Localizer["Password"]" aria-label="Password" aria-describedby="input-password" asp-for="Password" autocomplete="off">
                                         </div>
-                                    </div>
-                                </div>
 
-                                @if (Model.AllowRememberLogin)
-                                {
-                                    <div class="form-group login-remember row">
-                                        <div class="col-sm-9">
-                                            <div>
-                                                @Localizer["Remember"]
+                                        @*@if (Model.AllowRememberLogin)
+                                            {
+                                                <div class="form-group login-remember row">
+                                                    <div class="col-sm-9">
+                                                        <div>
+                                                            @Localizer["Remember"]
+                                                        </div>
+                                                        <toggle-button>
+                                                            <input asp-for="RememberLogin" type="checkbox">
+                                                        </toggle-button>
+                                                    </div>
+                                                </div>
+                                            }*@
+                                        <br />
+                                        <!--Button-->
+                                        <div class="form-group row">
+                                            <div class="col-sm-12">
+                                                <center>
+                                                    <div class="col-sm-6">
+                                                        <button class="btn btn-primary btn-block" name="button" value="login">@Localizer["Login"]</button>
+                                                    </div>
+                                                </center>
+
+                                                @*<button class="btn btn-secondary" name="button" value="cancel">@Localizer["Cancel"]</button>*@
+                                                @*<a asp-action="ForgotPassword" asp-controller="Account" class="btn btn-info" value="forgot">@Localizer["Forgot"]</a>
+                                                    @if (RootConfiguration.RegisterConfiguration.Enabled)
+                                                    {
+                                                        <a asp-action="Register" asp-controller="Account" class="btn btn-dark" value="forgot">@Localizer["Register"]</a>
+                                                    }*@
                                             </div>
-                                            <toggle-button>
-                                                <input asp-for="RememberLogin" type="checkbox">
-                                            </toggle-button>
                                         </div>
-                                    </div>
-                                }
-
-                                <!--Button-->
-                                <div class="form-group row">
-                                    <div class="col-sm-12">
-                                        <button class="btn btn-primary" name="button" value="login">@Localizer["Login"]</button>
-                                        <button class="btn btn-secondary" name="button" value="cancel">@Localizer["Cancel"]</button>
-                                        <a asp-action="ForgotPassword" asp-controller="Account" class="btn btn-info" value="forgot">@Localizer["Forgot"]</a>                                        
-                                        @if (RootConfiguration.RegisterConfiguration.Enabled)
-                                        {
-                                            <a asp-action="Register" asp-controller="Account" class="btn btn-dark" value="forgot">@Localizer["Register"]</a>
-                                        }
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
+                                    </fieldset>
+                                    <div class="dropdown-divider"></div>
+                                    <br />
+                                    <p>
+                                        พบปัญหาในการเข้าใช้งาน
+                                    </p>
+                                    <p>
+                                        โทร. 8337
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </center>
+
+
             </div>
+            @*<div class="col-md-3"></div>*@
         }
 
         @if (Model.VisibleExternalProviders.Any())
@@ -116,7 +142,6 @@
         }
     </div>
 </div>
-
 
 
 
