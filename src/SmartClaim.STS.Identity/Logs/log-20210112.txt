@@ -1,0 +1,319 @@
+[2021-01-12T03:27:51.0490492+00:00][INFO][1][Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "3.1.6" initialized '"IdentityServerDataProtectionDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SmartClaim.Admin.EntityFramework.SqlServer "
+[2021-01-12T03:27:51.8396902+00:00][INFO][1][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Xml]
+FROM [DataProtectionKeys] AS [d]"
+[2021-01-12T03:27:51.9585969+00:00][INFO][1][IdentityServer4.Startup] Starting IdentityServer4 version "3.1.1.0"
+[2021-01-12T03:27:51.9746812+00:00][DBUG][1][IdentityServer4.Startup] Custom IssuerUri set to "http://10.101.5.219:5000"
+[2021-01-12T03:27:51.9753266+00:00][DBUG][1][IdentityServer4.Startup] PublicOrigin explicitly set to "http://10.101.5.219:5000"
+[2021-01-12T03:27:51.9829930+00:00][INFO][1][IdentityServer4.Startup] Using the default authentication scheme "Identity.Application" for IdentityServer
+[2021-01-12T03:27:51.9833339+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for authentication
+[2021-01-12T03:27:51.9835997+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.External" as default ASP.NET Core scheme for sign-in
+[2021-01-12T03:27:51.9838453+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.External" as default ASP.NET Core scheme for sign-out
+[2021-01-12T03:27:51.9840015+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for challenge
+[2021-01-12T03:27:51.9841548+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for forbid
+[2021-01-12T03:27:52.2554793+00:00][INFO][1][Microsoft.Hosting.Lifetime] Now listening on: "http://[::]:80"
+[2021-01-12T03:27:52.2561335+00:00][INFO][1][Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[2021-01-12T03:27:52.2562618+00:00][INFO][1][Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+[2021-01-12T03:27:52.2563399+00:00][INFO][1][Microsoft.Hosting.Lifetime] Content root path: "/app"
+[2021-01-12T03:51:46.3707932+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/  
+[2021-01-12T03:51:46.4131395+00:00][DBUG][16][IdentityServer4.Startup] Login Url: "/Account/Login"
+[2021-01-12T03:51:46.4133865+00:00][DBUG][16][IdentityServer4.Startup] Login Return Url Parameter: "ReturnUrl"
+[2021-01-12T03:51:46.4134309+00:00][DBUG][16][IdentityServer4.Startup] Logout Url: "/Account/Logout"
+[2021-01-12T03:51:46.4134526+00:00][DBUG][16][IdentityServer4.Startup] ConsentUrl Url: "/consent"
+[2021-01-12T03:51:46.4134744+00:00][DBUG][16][IdentityServer4.Startup] Consent Return Url Parameter: "returnUrl"
+[2021-01-12T03:51:46.4135419+00:00][DBUG][16][IdentityServer4.Startup] Error Url: "/home/error"
+[2021-01-12T03:51:46.4136942+00:00][DBUG][16][IdentityServer4.Startup] Error Id Parameter: "errorId"
+[2021-01-12T03:51:46.5238183+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)"'
+[2021-01-12T03:51:46.5572550+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "SmartClaim.STS.Identity.Controllers.HomeController" ("SmartClaim.STS.Identity").
+[2021-01-12T03:51:46.6039289+00:00][INFO][16][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Index".
+[2021-01-12T03:51:47.4862298+00:00][INFO][16][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Index" executed in 881.2626ms.
+[2021-01-12T03:51:47.4887245+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)" in 930.3346ms
+[2021-01-12T03:51:47.4895369+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)"'
+[2021-01-12T03:51:47.4941813+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 1130.7883ms 200 text/html; charset=utf-8
+[2021-01-12T03:51:47.5333666+00:00][INFO][19][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/dist/css/web.css?v=xyATVK1qJOMwc5iqad_yMVmZ1bPSh2NrIU-LFUH1QnQ  
+[2021-01-12T03:51:47.5982531+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/images/bla.png  
+[2021-01-12T03:51:47.5982664+00:00][INFO][20][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/dist/js/bundle.min.js?v=11Fw87BWmEIjIw_LrA_JwvJM5t0w9WbTFIog6ElarB0  
+[2021-01-12T03:51:47.6028303+00:00][INFO][18][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/dist/css/bundle.min.css?v=6Y8xGSDMhkjYMZuaFSdp3fqA3xdNX-Q6_xp14ExGbY8  
+[2021-01-12T03:51:47.6313483+00:00][INFO][19][Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/dist/css/web.css"'. Physical path: '"/app/wwwroot/dist/css/web.css"'
+[2021-01-12T03:51:47.6350760+00:00][INFO][19][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 101.6204ms 200 text/css
+[2021-01-12T03:51:47.7194882+00:00][INFO][16][Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/bla.png"'. Physical path: '"/app/wwwroot/images/bla.png"'
+[2021-01-12T03:51:47.7201427+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 121.7528ms 200 image/png
+[2021-01-12T03:51:47.7417677+00:00][INFO][20][Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/dist/css/bundle.min.css"'. Physical path: '"/app/wwwroot/dist/css/bundle.min.css"'
+[2021-01-12T03:51:47.7420090+00:00][INFO][26][Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/dist/js/bundle.min.js"'. Physical path: '"/app/wwwroot/dist/js/bundle.min.js"'
+[2021-01-12T03:51:47.7420917+00:00][INFO][26][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 143.893ms 200 application/javascript
+[2021-01-12T03:51:47.7419779+00:00][INFO][20][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 139.1391ms 200 text/css
+[2021-01-12T03:51:47.8920990+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/dist/fonts/open-iconic.woff  
+[2021-01-12T03:51:47.9257367+00:00][INFO][19][Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/dist/fonts/open-iconic.woff"'. Physical path: '"/app/wwwroot/dist/fonts/open-iconic.woff"'
+[2021-01-12T03:51:47.9267756+00:00][INFO][19][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 34.8267ms 200 application/font-woff
+[2021-01-12T03:51:47.9746012+00:00][INFO][19][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+[2021-01-12T03:51:47.9862888+00:00][INFO][16][Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/favicon.ico"'. Physical path: '"/app/wwwroot/favicon.ico"'
+[2021-01-12T03:51:47.9875997+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 12.7046ms 200 image/x-icon
+[2021-01-12T03:51:49.3317543+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login  
+[2021-01-12T03:51:49.3631343+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:51:49.4031041+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:51:49.4350633+00:00][INFO][16][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Login".
+[2021-01-12T03:51:49.4792799+00:00][INFO][16][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Login" executed in 48.5393ms.
+[2021-01-12T03:51:49.4796169+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)" in 75.971ms
+[2021-01-12T03:51:49.4815324+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:51:49.4823393+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 150.8237ms 200 text/html; charset=utf-8
+[2021-01-12T03:51:49.5149385+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/images/logo THA ENG.png  
+[2021-01-12T03:51:49.5349805+00:00][INFO][26][Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/images/logo THA ENG.png"'. Physical path: '"/app/wwwroot/images/logo THA ENG.png"'
+[2021-01-12T03:51:49.5357587+00:00][INFO][26][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 20.8199ms 200 image/png
+[2021-01-12T03:51:49.5994885+00:00][INFO][20][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/dist/fonts/fontawesome-webfont.woff2?v=4.7.0  
+[2021-01-12T03:51:49.6267976+00:00][INFO][16][Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware] Sending file. Request path: '"/dist/fonts/fontawesome-webfont.woff2"'. Physical path: '"/app/wwwroot/dist/fonts/fontawesome-webfont.woff2"'
+[2021-01-12T03:51:49.6275146+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 28.0187ms 200 font/woff2
+[2021-01-12T03:51:59.2080913+00:00][INFO][20][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5000/Account/Login application/x-www-form-urlencoded 244
+[2021-01-12T03:51:59.2241430+00:00][DBUG][20][IdentityServer4.Hosting.CorsPolicyProvider] CORS request made for path: "/Account/Login" from origin: "null" but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[2021-01-12T03:51:59.2378512+00:00][INFO][20][Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware] No CORS policy found for the specified request.
+[2021-01-12T03:51:59.2554609+00:00][INFO][20][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:51:59.2739424+00:00][INFO][20][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SmartClaim.STS.Identity.ViewModels.Account.LoginInputModel, System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:51:59.4042838+00:00][INFO][20][Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "3.1.6" initialized '"AdminIdentityDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SmartClaim.Admin.EntityFramework.SqlServer "
+[2021-01-12T03:51:59.7197300+00:00][INFO][21][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("73"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+[2021-01-12T03:53:07.8900038+00:00][INFO][21][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)" in 68615.1188ms
+[2021-01-12T03:53:07.8936701+00:00][INFO][21][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:53:07.8969210+00:00][EROR][21][Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'user')
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetEmailAsync(TUser user)
+   at SmartClaim.STS.Identity.Helpers.UserResolver`1.GetEmail(TUser userName) in D:\Project\LastSkuba\SmartClaim\src\SmartClaim.STS.Identity\Helpers\UserResolver.cs:line 34
+   at SmartClaim.STS.Identity.Controllers.AccountController`2.Login(LoginInputModel model, String button) in D:\Project\LastSkuba\SmartClaim\src\SmartClaim.STS.Identity\Controllers\AccountController.cs:line 238
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at NWebsec.AspNetCore.Middleware.Middleware.MiddlewareBase.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2021-01-12T03:53:07.9966968+00:00][INFO][21][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 68788.8793ms 500 text/html; charset=utf-8
+[2021-01-12T03:53:11.7844564+00:00][INFO][22][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login  
+[2021-01-12T03:53:11.7924239+00:00][INFO][22][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:53:11.7938057+00:00][INFO][22][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:53:11.8126825+00:00][INFO][22][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Login".
+[2021-01-12T03:53:11.8801518+00:00][INFO][22][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Login" executed in 68.8363ms.
+[2021-01-12T03:53:11.8806385+00:00][INFO][22][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)" in 86.2376ms
+[2021-01-12T03:53:11.8808328+00:00][INFO][22][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:53:11.8814012+00:00][INFO][22][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 96.8286ms 200 text/html; charset=utf-8
+[2021-01-12T03:53:19.1892852+00:00][INFO][21][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5000/Account/Login application/x-www-form-urlencoded 243
+[2021-01-12T03:53:19.1905981+00:00][DBUG][21][IdentityServer4.Hosting.CorsPolicyProvider] CORS request made for path: "/Account/Login" from origin: "null" but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[2021-01-12T03:53:19.1910866+00:00][INFO][21][Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware] No CORS policy found for the specified request.
+[2021-01-12T03:53:19.1944997+00:00][INFO][21][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:53:19.1959654+00:00][INFO][21][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SmartClaim.STS.Identity.ViewModels.Account.LoginInputModel, System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:53:19.2125988+00:00][INFO][21][Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "3.1.6" initialized '"AdminIdentityDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SmartClaim.Admin.EntityFramework.SqlServer "
+[2021-01-12T03:53:19.2652763+00:00][INFO][35][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("16"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+[2021-01-12T03:53:50.1920926+00:00][INFO][35][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)" in 30995.5637ms
+[2021-01-12T03:53:50.1923942+00:00][INFO][35][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:53:50.1932166+00:00][EROR][35][Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'user')
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetEmailAsync(TUser user)
+   at SmartClaim.STS.Identity.Helpers.UserResolver`1.GetEmail(TUser userName) in D:\Project\LastSkuba\SmartClaim\src\SmartClaim.STS.Identity\Helpers\UserResolver.cs:line 34
+   at SmartClaim.STS.Identity.Controllers.AccountController`2.Login(LoginInputModel model, String button) in D:\Project\LastSkuba\SmartClaim\src\SmartClaim.STS.Identity\Controllers\AccountController.cs:line 238
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events)
+   at IdentityServer4.Hosting.MutualTlsTokenEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at NWebsec.AspNetCore.Middleware.Middleware.MiddlewareBase.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+[2021-01-12T03:53:50.2225381+00:00][INFO][35][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 31033.4609ms 500 text/html; charset=utf-8
+[2021-01-12T03:53:52.6380838+00:00][INFO][34][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login  
+[2021-01-12T03:53:52.6430872+00:00][INFO][34][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:53:52.6441168+00:00][INFO][34][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:53:52.6486588+00:00][INFO][34][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Login".
+[2021-01-12T03:53:52.6616613+00:00][INFO][34][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Login" executed in 13.2095ms.
+[2021-01-12T03:53:52.6631169+00:00][INFO][34][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)" in 18.5143ms
+[2021-01-12T03:53:52.6633956+00:00][INFO][34][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:53:52.6641880+00:00][INFO][34][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 26.131ms 200 text/html; charset=utf-8
+[2021-01-12T03:53:59.2317738+00:00][INFO][33][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5000/Account/Login application/x-www-form-urlencoded 251
+[2021-01-12T03:53:59.2328040+00:00][DBUG][33][IdentityServer4.Hosting.CorsPolicyProvider] CORS request made for path: "/Account/Login" from origin: "null" but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[2021-01-12T03:53:59.2329956+00:00][INFO][33][Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware] No CORS policy found for the specified request.
+[2021-01-12T03:53:59.2345158+00:00][INFO][33][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.Acc[2021-01-12T03:57:01.0548868+00:00][INFO][1][Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "3.1.6" initialized '"IdentityServerDataProtectionDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SmartClaim.Admin.EntityFramework.SqlServer "
+[2021-01-12T03:57:01.9357604+00:00][INFO][1][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Xml]
+FROM [DataProtectionKeys] AS [d]"
+[2021-01-12T03:57:02.0547803+00:00][INFO][1][IdentityServer4.Startup] Starting IdentityServer4 version "3.1.1.0"
+[2021-01-12T03:57:02.0660968+00:00][DBUG][1][IdentityServer4.Startup] Custom IssuerUri set to "http://10.101.5.219:5000"
+[2021-01-12T03:57:02.0663124+00:00][DBUG][1][IdentityServer4.Startup] PublicOrigin explicitly set to "http://10.101.5.219:5000"
+[2021-01-12T03:57:02.0710659+00:00][INFO][1][IdentityServer4.Startup] Using the default authentication scheme "Identity.Application" for IdentityServer
+[2021-01-12T03:57:02.0719821+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for authentication
+[2021-01-12T03:57:02.0724859+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.External" as default ASP.NET Core scheme for sign-in
+[2021-01-12T03:57:02.0727491+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.External" as default ASP.NET Core scheme for sign-out
+[2021-01-12T03:57:02.0728709+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for challenge
+[2021-01-12T03:57:02.0729985+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for forbid
+[2021-01-12T03:57:02.2841327+00:00][INFO][1][Microsoft.Hosting.Lifetime] Now listening on: "http://[::]:80"
+[2021-01-12T03:57:02.2845059+00:00][INFO][1][Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[2021-01-12T03:57:02.2846337+00:00][INFO][1][Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+[2021-01-12T03:57:02.2846951+00:00][INFO][1][Microsoft.Hosting.Lifetime] Content root path: "/app"
+[2021-01-12T03:58:15.0201701+00:00][INFO][4][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login  
+[2021-01-12T03:58:15.0458344+00:00][DBUG][4][IdentityServer4.Startup] Login Url: "/Account/Login"
+[2021-01-12T03:58:15.0459470+00:00][DBUG][4][IdentityServer4.Startup] Login Return Url Parameter: "ReturnUrl"
+[2021-01-12T03:58:15.0459801+00:00][DBUG][4][IdentityServer4.Startup] Logout Url: "/Account/Logout"
+[2021-01-12T03:58:15.0460008+00:00][DBUG][4][IdentityServer4.Startup] ConsentUrl Url: "/consent"
+[2021-01-12T03:58:15.0460270+00:00][DBUG][4][IdentityServer4.Startup] Consent Return Url Parameter: "returnUrl"
+[2021-01-12T03:58:15.0460760+00:00][DBUG][4][IdentityServer4.Startup] Error Url: "/home/error"
+[2021-01-12T03:58:15.0461394+00:00][DBUG][4][IdentityServer4.Startup] Error Id Parameter: "errorId"
+[2021-01-12T03:58:15.1421967+00:00][INFO][4][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:15.1951714+00:00][INFO][4][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:58:15.2913994+00:00][INFO][4][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Login".
+[2021-01-12T03:58:15.6409848+00:00][INFO][4][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Login" executed in 350.3103ms.
+[2021-01-12T03:58:15.6426517+00:00][INFO][4][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)" in 446.5358ms
+[2021-01-12T03:58:15.6435934+00:00][INFO][4][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:15.6531707+00:00][INFO][4][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 640.7547ms 200 text/html; charset=utf-8
+[2021-01-12T03:58:21.3578870+00:00][INFO][10][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5000/Account/Login application/x-www-form-urlencoded 251
+[2021-01-12T03:58:21.3632785+00:00][DBUG][10][IdentityServer4.Hosting.CorsPolicyProvider] CORS request made for path: "/Account/Login" from origin: "null" but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[2021-01-12T03:58:21.3712760+00:00][INFO][10][Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware] No CORS policy found for the specified request.
+[2021-01-12T03:58:21.3797684+00:00][INFO][10][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:21.3927841+00:00][INFO][10][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(SmartClaim.STS.Identity.ViewModels.Account.LoginInputModel, System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:58:21.4583896+00:00][INFO][10][Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "3.1.6" initialized '"AdminIdentityDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SmartClaim.Admin.EntityFramework.SqlServer "
+[2021-01-12T03:58:21.5933430+00:00][INFO][4][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("50"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+[2021-01-12T03:58:21.9073428+00:00][INFO][10][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("10"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [u].[Id], [u].[ClaimType], [u].[ClaimValue], [u].[UserId]
+FROM [UserClaims] AS [u]
+WHERE [u].[UserId] = @__user_Id_0"
+[2021-01-12T03:58:21.9897937+00:00][INFO][10][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("12"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[Name]
+FROM [UserRoles] AS [u]
+INNER JOIN [Roles] AS [r] ON [u].[RoleId] = [r].[Id]
+WHERE [u].[UserId] = @__userId_0"
+[2021-01-12T03:58:22.0041750+00:00][INFO][10][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("6"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [Roles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+[2021-01-12T03:58:22.0223017+00:00][INFO][16][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [r].[ClaimType], [r].[ClaimValue]
+FROM [RoleClaims] AS [r]
+WHERE [r].[RoleId] = @__role_Id_0"
+[2021-01-12T03:58:22.0342288+00:00][DBUG][16][IdentityServer4.Hosting.IdentityServerAuthenticationService] Augmenting SignInContext
+[2021-01-12T03:58:22.0354494+00:00][DBUG][16][IdentityServer4.Hosting.IdentityServerAuthenticationService] Adding idp claim with value: "local"
+[2021-01-12T03:58:22.0356948+00:00][DBUG][16][IdentityServer4.Hosting.IdentityServerAuthenticationService] Adding amr claim with value: "pwd"
+[2021-01-12T03:58:22.0358921+00:00][DBUG][16][IdentityServer4.Hosting.IdentityServerAuthenticationService] Adding auth_time claim with value: "1610423902"
+[2021-01-12T03:58:22.0597561+00:00][INFO][16][Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler] AuthenticationScheme: "Identity.Application" signed in.
+[2021-01-12T03:58:22.0688758+00:00][INFO][16][IdentityServer4.Events.DefaultEventService] UserLoginSuccessEvent { Username: "003575", Provider: null, ProviderUserId: null, SubjectId: "654150b1-f34d-4c9c-b206-0af874ebff5a", DisplayName: "003575", Endpoint: "UI", ClientId: null, Category: "Authentication", Name: "User Login Success", EventType: Success, Id: 1000, Message: null, ActivityId: "0HM5MLP4QM2PA:00000002", TimeStamp: 01/12/2021 03:58:22, ProcessId: 1594, LocalIpAddress: "::ffff:172.18.0.3:80", RemoteIpAddress: "::ffff:172.18.0.1" }
+[2021-01-12T03:58:22.0920208+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.RedirectResultExecutor] Executing RedirectResult, redirecting to "/".
+[2021-01-12T03:58:22.0932823+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)" in 700.193ms
+[2021-01-12T03:58:22.0938768+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:22.1015037+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 743.8382ms 302 
+[2021-01-12T03:58:22.1050132+00:00][INFO][15][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/  
+[2021-01-12T03:58:22.1147838+00:00][INFO][15][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:22.1171355+00:00][INFO][15][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "SmartClaim.STS.Identity.Controllers.HomeController" ("SmartClaim.STS.Identity").
+[2021-01-12T03:58:22.1232287+00:00][INFO][15][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Index".
+[2021-01-12T03:58:22.1652238+00:00][INFO][15][Microsoft.AspNetCore.Authorization.DefaultAuthorizationService] Authorization was successful.
+[2021-01-12T03:58:22.1729079+00:00][INFO][15][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Index" executed in 50.3681ms.
+[2021-01-12T03:58:22.1731436+00:00][INFO][15][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)" in 55.6873ms
+[2021-01-12T03:58:22.1733543+00:00][INFO][15][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:22.1738729+00:00][INFO][15][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 68.8356ms 200 text/html; charset=utf-8
+[2021-01-12T03:58:36.3921023+00:00][INFO][10][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/Account/Logout  
+[2021-01-12T03:58:36.4051107+00:00][INFO][10][Microsoft.AspNetCore.Authorization.DefaultAuthorizationService] Authorization was successful.
+[2021-01-12T03:58:36.4055715+00:00][INFO][10][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:36.4156715+00:00][INFO][10][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Logout\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout(System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:58:36.4302215+00:00][INFO][10][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Logout".
+[2021-01-12T03:58:36.4402220+00:00][INFO][10][Microsoft.AspNetCore.Authorization.DefaultAuthorizationService] Authorization was successful.
+[2021-01-12T03:58:36.4466030+00:00][INFO][10][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Logout" executed in 19.5403ms.
+[2021-01-12T03:58:36.4468735+00:00][INFO][10][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)" in 30.3349ms
+[2021-01-12T03:58:36.4470654+00:00][INFO][10][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:36.4475849+00:00][INFO][10][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 56.3303ms 200 text/html; charset=utf-8
+[2021-01-12T03:58:38.3016710+00:00][INFO][10][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/Account/Logout  
+[2021-01-12T03:58:38.3140007+00:00][INFO][10][Microsoft.AspNetCore.Authorization.DefaultAuthorizationService] Authorization was successful.
+[2021-01-12T03:58:38.3145028+00:00][INFO][10][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:38.3157021+00:00][INFO][10][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Logout\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout(System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:58:38.3181286+00:00][INFO][10][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Logout".
+[2021-01-12T03:58:38.3220739+00:00][INFO][10][Microsoft.AspNetCore.Authorization.DefaultAuthorizationService] Authorization was successful.
+[2021-01-12T03:58:38.3293407+00:00][INFO][10][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Logout" executed in 10.9175ms.
+[2021-01-12T03:58:38.3298455+00:00][INFO][10][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)" in 13.5836ms
+[2021-01-12T03:58:38.3301548+00:00][INFO][10][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:38.3308672+00:00][INFO][10][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 29.2778ms 200 text/html; charset=utf-8
+[2021-01-12T03:58:40.2518740+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5000/Account/Logout application/x-www-form-urlencoded 235
+[2021-01-12T03:58:40.2531925+00:00][DBUG][16][IdentityServer4.Hosting.CorsPolicyProvider] CORS request made for path: "/Account/Logout" from origin: "null" but was ignored because path was not for an allowed IdentityServer CORS endpoint
+[2021-01-12T03:58:40.2560237+00:00][INFO][16][Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware] No CORS policy found for the specified request.
+[2021-01-12T03:58:40.2645329+00:00][INFO][16][Microsoft.AspNetCore.Authorization.DefaultAuthorizationService] Authorization was successful.
+[2021-01-12T03:58:40.2649878+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:40.2707728+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Logout\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Logout(SmartClaim.STS.Identity.ViewModels.Account.LogoutInputModel)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:58:40.2828095+00:00][INFO][16][Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler] AuthenticationScheme: "Identity.Application" signed out.
+[2021-01-12T03:58:40.2838962+00:00][INFO][16][Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler] AuthenticationScheme: "Identity.External" signed out.
+[2021-01-12T03:58:40.2863395+00:00][INFO][16][Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler] AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+[2021-01-12T03:58:40.2878445+00:00][INFO][16][IdentityServer4.Events.DefaultEventService] UserLogoutSuccessEvent { SubjectId: "654150b1-f34d-4c9c-b206-0af874ebff5a", DisplayName: "admin", Category: "Authentication", Name: "User Logout Success", EventType: Success, Id: 1002, Message: null, ActivityId: "0HM5MLP4QM2PA:00000006", TimeStamp: 01/12/2021 03:58:40, ProcessId: 1594, LocalIpAddress: "::ffff:172.18.0.3:80", RemoteIpAddress: "::ffff:172.18.0.1" }
+[2021-01-12T03:58:40.2912705+00:00][INFO][16][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "LoggedOut".
+[2021-01-12T03:58:40.3077179+00:00][INFO][16][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "LoggedOut" executed in 18.4697ms.
+[2021-01-12T03:58:40.3100592+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)" in 38.5845ms
+[2021-01-12T03:58:40.3113690+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Logout (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:40.3125016+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 62.2037ms 200 text/html; charset=utf-8
+[2021-01-12T03:58:43.6900380+00:00][INFO][15][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/  
+[2021-01-12T03:58:43.6918248+00:00][INFO][15][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:43.6928600+00:00][INFO][15][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "SmartClaim.STS.Identity.Controllers.HomeController" ("SmartClaim.STS.Identity").
+[2021-01-12T03:58:43.6955201+00:00][INFO][15][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Index".
+[2021-01-12T03:58:43.7123615+00:00][INFO][15][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Index" executed in 16.9679ms.
+[2021-01-12T03:58:43.7140689+00:00][INFO][15][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)" in 20.4569ms
+[2021-01-12T03:58:43.7148249+00:00][INFO][15][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:43.7157148+00:00][INFO][15][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 25.7126ms 200 text/html; charset=utf-8
+[2021-01-12T03:58:46.8537048+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login  
+[2021-01-12T03:58:46.8587629+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:46.8598656+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(System.String)" on controller "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>" ("SmartClaim.STS.Identity").
+[2021-01-12T03:58:46.8630121+00:00][INFO][16][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Login".
+[2021-01-12T03:58:46.8787372+00:00][INFO][16][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Login" executed in 15.797ms.
+[2021-01-12T03:58:46.8793055+00:00][INFO][16][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)" in 18.2531ms
+[2021-01-12T03:58:46.8798875+00:00][INFO][16][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executed endpoint '"SmartClaim.STS.Identity.Controllers.AccountController<SmartClaim.Admin.EntityFramework.Shared.Entities.Identity.UserIdentity, string>.Login (SmartClaim.STS.Identity)"'
+[2021-01-12T03:58:46.8809839+00:00][INFO][16][Microsoft.AspNetCore.Hosting.Diagnostics] Request finished in 26.9861ms 200 text/html; charset=utf-8
+[2021-01-12T03:58:54.9091356+00:00][INFO][13][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 POST http://localhost:5000/Account/Login application/x-www-form-urlencoded 251
+[2021-01-12T03:58:54.9099158+00:00][DBUG][13][IdentityServer4.Hosting.CorsPolicyProvider] CORS request made for path: "/Account/Login" from origin: "null" but was ignored beca[2021-01-12T04:01:38.3079392+00:00][INFO][1][Microsoft.EntityFrameworkCore.Infrastructure] Entity Framework Core "3.1.6" initialized '"IdentityServerDataProtectionDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SmartClaim.Admin.EntityFramework.SqlServer "
+[2021-01-12T04:01:39.0380479+00:00][INFO][1][Microsoft.EntityFrameworkCore.Database.Command] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Xml]
+FROM [DataProtectionKeys] AS [d]"
+[2021-01-12T04:01:39.1424592+00:00][INFO][1][IdentityServer4.Startup] Starting IdentityServer4 version "3.1.1.0"
+[2021-01-12T04:01:39.1546134+00:00][DBUG][1][IdentityServer4.Startup] Custom IssuerUri set to "http://10.101.5.219:5000"
+[2021-01-12T04:01:39.1548449+00:00][DBUG][1][IdentityServer4.Startup] PublicOrigin explicitly set to "http://10.101.5.219:5000"
+[2021-01-12T04:01:39.1589792+00:00][INFO][1][IdentityServer4.Startup] Using the default authentication scheme "Identity.Application" for IdentityServer
+[2021-01-12T04:01:39.1592864+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for authentication
+[2021-01-12T04:01:39.1594729+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.External" as default ASP.NET Core scheme for sign-in
+[2021-01-12T04:01:39.1596194+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.External" as default ASP.NET Core scheme for sign-out
+[2021-01-12T04:01:39.1598399+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for challenge
+[2021-01-12T04:01:39.1600059+00:00][DBUG][1][IdentityServer4.Startup] Using "Identity.Application" as default ASP.NET Core scheme for forbid
+[2021-01-12T04:01:39.3677377+00:00][INFO][1][Microsoft.Hosting.Lifetime] Now listening on: "http://[::]:80"
+[2021-01-12T04:01:39.3682358+00:00][INFO][1][Microsoft.Hosting.Lifetime] Application started. Press Ctrl+C to shut down.
+[2021-01-12T04:01:39.3683232+00:00][INFO][1][Microsoft.Hosting.Lifetime] Hosting environment: "Development"
+[2021-01-12T04:01:39.3683906+00:00][INFO][1][Microsoft.Hosting.Lifetime] Content root path: "/app"
+[2021-01-12T04:03:00.4639235+00:00][INFO][6][Microsoft.AspNetCore.Hosting.Diagnostics] Request starting HTTP/1.1 GET http://localhost:5000/  
+[2021-01-12T04:03:00.5152674+00:00][DBUG][6][IdentityServer4.Startup] Login Url: "/Account/Login"
+[2021-01-12T04:03:00.5154584+00:00][DBUG][6][IdentityServer4.Startup] Login Return Url Parameter: "ReturnUrl"
+[2021-01-12T04:03:00.5155077+00:00][DBUG][6][IdentityServer4.Startup] Logout Url: "/Account/Logout"
+[2021-01-12T04:03:00.5155874+00:00][DBUG][6][IdentityServer4.Startup] ConsentUrl Url: "/consent"
+[2021-01-12T04:03:00.5156898+00:00][DBUG][6][IdentityServer4.Startup] Consent Return Url Parameter: "returnUrl"
+[2021-01-12T04:03:00.5157413+00:00][DBUG][6][IdentityServer4.Startup] Error Url: "/home/error"
+[2021-01-12T04:03:00.5158386+00:00][DBUG][6][IdentityServer4.Startup] Error Id Parameter: "errorId"
+[2021-01-12T04:03:00.6119817+00:00][INFO][6][Microsoft.AspNetCore.Routing.EndpointMiddleware] Executing endpoint '"SmartClaim.STS.Identity.Controllers.HomeController.Index (SmartClaim.STS.Identity)"'
+[2021-01-12T04:03:00.6442832+00:00][INFO][6][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "SmartClaim.STS.Identity.Controllers.HomeController" ("SmartClaim.STS.Identity").
+[2021-01-12T04:03:00.6789905+00:00][INFO][6][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executing ViewResult, running view "Index".
+[2021-01-12T04:03:00.9327298+00:00][INFO][6][Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor] Executed ViewResult - view "Index" executed in 256.5794ms.
+[2021-01-12T04:03:00.9346640+00:00][INFO][6][Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker] Executed action "SmartClaim.STS.Identity.Controll

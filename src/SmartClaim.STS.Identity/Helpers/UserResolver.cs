@@ -28,6 +28,12 @@ namespace SmartClaim.STS.Identity.Helpers
                     return null;
             }
         }
+
+        public async Task<string> GetEmail(TUser userName)
+        {
+            var email = await _userManager.GetEmailAsync(userName);
+            return email;
+        }
     }
 }
 

@@ -235,6 +235,7 @@ namespace SmartClaim.STS.Identity.Controllers
             if (ModelState.IsValid)
             {
                 var user = await _userResolver.GetUserAsync(model.Username);
+                var email = await _userResolver.GetEmail(user);
                 if (user != default(TUser))
                 {
                     if (await _userManager.IsLockedOutAsync(user))
@@ -243,8 +244,9 @@ namespace SmartClaim.STS.Identity.Controllers
                     }
                     else
                     {
+                        string userEmail = email.Split('@')[0];
                         string domainName = "bla.co.th";
-                        string userDn = $"{model.Username}@{domainName}";
+                        string userDn = $"{userEmail}@{domainName}";
 
                         try
                         {
